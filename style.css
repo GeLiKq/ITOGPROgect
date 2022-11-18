@@ -217,7 +217,7 @@ footer{
 }
 @media(max-width:530px){
     main{
-        background-image:url(/image\ 31.png);
+        background-image:url(image 31.png);
     }
     .bx-pager-item{
      font-size: 20px;
@@ -225,7 +225,7 @@ footer{
 }
 @media(max-width:395px){
     main{
-        background-image:url(/image\ 32.png) ;
+        background-image:url(image 32.png) ;
         color: rgb(255, 255, 255);
         font-size: 13px;
     }

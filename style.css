@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1D1D1D;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.poster{
+  width: 450px;
+  height: 250px;
+}
+.bx-wrapper{
+  width: 450px;
+  margin: auto;
+  border: 1px; 
+  padding: 0;
+ 
+}
+
+.bx-viewport{
+  background-color: #1D1D1D;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    padding: 60px;
+}
+header{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:space-between ;
+}
+.h2red{
+    color: #FF2E00;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-right: 45px;
+}
+h2{
+  color: #fff;
+  
+}
+.h22{
+  padding: 50px;
+}
+
+main{
+    background-image: url(/image\ 18\ \(6\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: #FF2E00;
+    border-radius: 5%;
+    border-color: #FF2E00;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 65px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #772121;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #131313;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #1d0a0a;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .postersInner{
+    display: flex;
+    justify-content: space-evenly;
+}
+.poster{
+  width: 450px;
+}
+.foot{
+  width: 80px;
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #181818;
+  padding: 18px;
+  color: #fff;
+  font-size: 12px;
+}
+@media(max-width:1311px){
+    main{
+        background-image: url(/image\ 18\ \(3\).png);
+
+    }
+    h2{
+      font-size: 20px;
+    }
+    .poster{
+      width: 350px;
+      height: 150px;
+    }
+    .bx-wrapper{
+      width: 250px;
+      margin: auto;
+      border: 1px; 
+     
+    }
+}
+@media(max-width: 1240px){
+    main{
+        background-image:url(/image\ 18\ \(4\).png);
+    }
+}
+@media(max-width:1040px){
+    main{
+        background-image: url(/image\ 18\ \(5\).png);
+    }
+}
+@media(max-width:880px){
+    main{
+        background-image: url(/image\ 18\ \(6\).png);
+    }
+    header{
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+      }
+      .menu__btn{
+        top: 50px;
+      }
+}
+@media(max-width:880px){
+    .container{
+        padding: 30px;
+    }
+}
+@media(max-width:530px){
+    main{
+        background-image:url(/image\ 31.png);
+    }
+    .bx-pager-item{
+     font-size: 20px;
+    }
+}
+@media(max-width:395px){
+    main{
+        background-image:url(/image\ 32.png) ;
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+    h2{
+      font-size: 14px;
+    }
+    .poster{
+      width: 200px;
+      height: 100px;
+    }
+    .bx-wrapper{
+      width: 200px;
+      margin: auto;
+      border: 1px; 
+     
+    }
+    
+}
